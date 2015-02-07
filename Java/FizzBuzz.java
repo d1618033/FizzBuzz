@@ -1,6 +1,5 @@
 public class FizzBuzz{
-    public static void main(String[] args){
-        int n = Integer.parseInt(args[0]);
+    public static void fizzBuzz(int n){
         for (int i=1; i<=n; i++){
             if (i % 15 == 0)
                 System.out.println("Fizz Buzz");
@@ -11,5 +10,9 @@ public class FizzBuzz{
             else
                 System.out.println(i);
         }
+    }
+    public static void main(String[] args){
+        int n = Integer.parseInt(args[0]);
+        fizzBuzz(n);
     }
 }
