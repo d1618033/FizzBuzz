@@ -1,7 +1,7 @@
 #!/usr/bin/nodejs
 
 function fizzbuzz(n){
-    for (i=1; i<=n; i++){
+    for (var i=1; i<=n; i++){
         if (i % 15 == 0)
             console.log("Fizz Buzz");
         else if (i % 3 == 0)
@@ -13,4 +13,5 @@ function fizzbuzz(n){
     }
 }
 
-fizzbuzz(parseInt(process.argv[2]));
+var n = parseInt(process.argv[2]);
+fizzbuzz(n);
