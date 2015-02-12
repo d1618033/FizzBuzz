@@ -1,11 +1,14 @@
 #!/usr/bin/clojure
 
+(defn divides [n k]
+    (= (mod n k) 0))
+    
 (defn get-fizz-buzz-n [n]
-  (if (= (mod n 15) 0)
+  (if (divides n 15)
       "Fizz Buzz"
-      (if (= (mod n 3) 0)
+      (if (divides n 3)
           "Fizz"
-          (if (= (mod n 5) 0)
+          (if (divides n 5)
               "Buzz"
               (str n)))))
 
