@@ -1,7 +1,7 @@
 #!/usr/bin/php5
 <?php
 function fizzbuzz($n){
-    for ($i=1; $i<=$n; $i++){
+    for ($i = 1; $i <= $n; $i++){
         if ($i % 15 == 0)
             echo "Fizz Buzz\n";
         else if ($i % 3 == 0)
